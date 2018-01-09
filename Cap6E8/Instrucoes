@@ -24,4 +24,4 @@ Criar método calculaConta
 Se o periodo for menor ou igual a 3 horas, então retorna periodoBasico
 Se o periodo for maior que 3 horas e menor que 16 horas, então retorna ( periodoBasico mais adicional vezes periodo )
 Se o periodo for maior ou igual a 16 horas, então retorna valorMaximo
-Ou retorna mensagem dizendo que o período é inválido.
+Ou retorna 0
