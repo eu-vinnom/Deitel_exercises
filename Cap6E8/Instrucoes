@@ -17,6 +17,7 @@ Criar constante valorMaximo igual a 10
 Criar campo periodo
 
 Criar método getPeriodo
+Criar método setPeriodo
 Criar método calculaConta
 
 ----Método calculaConta ( recebe periodo )
