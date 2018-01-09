@@ -1,0 +1,25 @@
+Aplicativo que calcula taxa de estacionamento
+
+Um estacionamento cobrará $2,00 por três horas iniciais de uso.
+A cada hora adicional, será acrescentado $0,50.
+O máximo cobrado num período de 24 horas, é de $10,00. 
+O período máximo de estacionamento é de 24 horas
+
+O programa deve calcular o quanto deve ser cobrado de cada cliente.
+A quantidade de horas deve ser entrada pelo usuaŕio do programa.
+O programa deve mostrar a receita total.
+O método calculaConta deve ser usado para determinar a conta de cada cliente.
+
+Criar classe Estacionamento
+Criar constante periodoBasico igual a 2
+Criar constante adicional igual a 0,5
+Criar constante valorMaximo igual a 10
+
+Criar método getPeriodo
+Criar método calculaConta
+
+----Método calculaConta ( recebe periodo )
+Se o periodo for menor ou igual a 3 horas, então retorna periodoBasico
+Se o periodo for maior que 3 horas e menor que 16 horas, então retorna ( periodoBasico mais adicional vezes periodo )
+Se o periodo for maior ou igual a 16 horas, então retorna valorMaximo
+Ou retorna mensagem dizendo que o período é inválido.
