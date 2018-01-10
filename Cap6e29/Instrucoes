@@ -8,8 +8,9 @@ Espera-se que a quantidade de "cara" seja aproximadamente
  
 Criar a classe CaraECoroa
 Criar enum moeda(contem CARA e COROA)
-Criar campo cara
-Criar campo coroa
+Criar main
+Criar variável cara
+Criar variável coroa
 Criar método joga
 Criar variável quantidade
 Criar entrada de usuário
