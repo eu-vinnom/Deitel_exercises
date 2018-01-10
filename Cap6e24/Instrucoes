@@ -1,0 +1,14 @@
+Aplicativo testa se um numero recebido é perfeito
+
+Para um número ser perfeito, a soma de seus divisores tem que ser igual ao numero
+
+Criar classe TestaNumerosPerfeitos
+Cria método ePerfeito ( recebe um número inteiro )
+
+----Método ePerfeito
+Declara variável soma igual a 0
+Percorre um laço de 1 a 1000
+Testa por outro laço se cada número é divisor do valor do laço anterior
+Se for divisor, adiciona à variável soma, imprime na tela o divisor
+Se a soma for igual ao valor do laço anterior, imprime que é perfeito
+Senão, imprime que não é perfeito 
