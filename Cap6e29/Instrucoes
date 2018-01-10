@@ -21,7 +21,7 @@ Mostra no console a quantidade de cara e a quantidade de coroa.
 ----Método joga
 Cria um objeto Random
 Cria uma moeda Face
-Cria um switch, onde seu parametro é Random.nextInt(1)
+Cria um switch, onde seu parametro é Random.nextInt(2)
 	caso o valor seja 0
 		a moeda é CARA
 	caso o valor seja 1
