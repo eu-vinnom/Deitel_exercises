@@ -1,0 +1,30 @@
+Aplicativo que simula o jogo de cara ou coroa
+
+O aplicativo deve simular o jogo de cara ou coroa
+por uma quantidade de vezes definida pelo usuário.
+Cada rodada deve ser contada e depois mostrada ao usuário.
+Espera-se que a quantidade de "cara" seja aproximadamente
+ igual a quantidade de "coroa".
+ 
+Criar a classe CaraECoroa
+Criar enum moeda(contem CARA e COROA)
+Criar campo cara
+Criar campo coroa
+Criar método joga
+Criar variável quantidade
+Criar entrada de usuário
+Indaga o usuário a quantidade de vezes que o método joga deve ser executado
+Cria laço que executa o método joga quantas vezes o usuário decidiu
+Se o retorno do método for CARA, incrementa cara
+se o retorno do método for COROA, incrementa coroa
+Mostra no console a quantidade de cara e a quantidade de coroa.
+
+----Método joga
+Cria um objeto Random
+Cria uma moeda
+Cria um switch, onde seu parametro é Random.nextInt(1)
+	caso o valor seja 0
+		a moeda é CARA
+	caso o valor seja 1
+		a moeda é COROA
+retorna moeda
