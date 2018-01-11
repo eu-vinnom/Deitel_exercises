@@ -23,10 +23,11 @@ Se "contador" for igual 10
 	Se "contaAcertos" dividido por 10 for menor que 0,75
 		Imprime a mensagem "Peça ajuda extra ao seu professor."
 		iguala "contador" a 1
+		iguala "contaAcertos" a 0 
 	Senão
 		Imprime a mensagem "Parabéns, você está pronto para ir para o próximo nível!"
 		iguala "contador" a 1
-
+		iguala "contaAcertos" a 0
 
 ----Método numeroAleatório
 retorna o próximo número inteiro aleatório com limite em 10
