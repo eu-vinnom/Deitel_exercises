@@ -1,0 +1,75 @@
+Aplicativo de instrução assistida por computador (IAC) - primeira modificação
+
+O aplicativo deve interagir com um usuário (criança)
+e deve pedir para que seja inserido dois números inteiros
+de um dígito. O programa deve então indagar o produto
+entre os dois números. Caso o usuário acerte,
+o programa deve pedir novamente por números inteiros de um dígito.
+Caso o usuário erre, então o programa deve repetir até que esteja certo.
+
+Criar classe IAC
+Criar enum resultado (certo, errado, encerra)
+Declara objeto "aleatorio" do tipo Random estático e constante
+Declara objeto "entrada" do tipo Scanner estático e constante
+Declara "teste" estático do tipo resultado com valor inicial nulo
+Declarar main
+Imprime mensagem "Responda a pergunta abaixo. Caso queira encerrar o programa, digite -1"
+Chama método testaProduto enquanto teste for diferente de resultado encerra
+
+----Método numeroAleatório
+retorna o próximo número inteiro aleatório com limite em 10
+
+----Método estático testaProduto
+Declara variável "num1" do tipo inteiro e atribui numeroAleatorio
+Declara variável "num2" do topo inteiro e atribui numeroAleatorio
+Declara variável "produtoReal" do tipo inteiro e atribui o produto entre "num1" e "num2"
+Declara variável "produtoUsuario" tipo inteiro
+Mostra os números "num1" e "num2" para o usuário e pergunta qual o produto entre eles
+Armazena a entrada em "produtoUsuario"
+Encerra o objeto entrada
+Cria um if - else if - else if
+	se "produtoUsuario" for igual a "produtoReal"
+		teste é igual ao resultado certo
+		chama método mensagemAcerto
+	ou se "produtoUsuario" for diferente a "produtoReal" E "produtoUsuario" for diferente de -1
+		faça
+		teste é igual a resultado errado
+		chama método mensagemErro
+		Mostra os números "num1" e "num2" para o usuário e pergunta qual o produto entre eles
+		Armazena a entrada em "produtoUsuario"
+		se "produtoUsuario" for igual a "produtoReal"
+			teste é igual ao resultado certo
+			chama método mensagemAcerto
+			quebra o laço
+		ou se "produtoUsuario" for igual a -1
+			teste é igual a resultado encerra
+			imprime a mensagem "o programa será encerrado"
+			quebra o laço
+		enquanto "produtoUsuario" for diferente a "produtoReal" E "produtoUsuario" for diferente de -1
+	ou se "produtoUsuario" for igual a -1
+		teste é igual a resultado encerra
+		imprime a mensagem "o programa será encerrado"
+		
+----Método mensagemAcerto
+Declara variável "acerto" do tipo inteiro e atribui um numero aleatorio de um a quatro
+Declara um switch para "acerto"
+	caso seja igual a 1
+		Imprime mensagem "Muito bom!"
+	caso seja igual a 2
+		Imprime mensagem "Excelente!"
+	caso seja igual a 3
+		Imprime mensagem "Ótimo trabalho!"
+	caso seja igual a 4
+		Imprime mensagem "Continue com o ótimo trabalho!"
+		
+----Método mensagemErro
+Declara variável "erro" do tipo inteiro e atribui um numero aleatorio de um a quatro
+Declara um switch para "erro"
+	caso seja igual a 1
+		Imprime mensagem "Não, por favor tente de novo."
+	caso seja igual a 2
+		Imprime mensagem "Errado, tente mais uma vez."
+	caso seja igual a 3
+		Imprime mensagem "Não desista!"
+	caso seja igual a 4
+		Imprime mensagem "Não, continue tentando."
