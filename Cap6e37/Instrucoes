@@ -13,21 +13,21 @@ Criar enum resultado (certo, errado, encerra)
 Declarar objeto "aleatorio" do tipo Random estático e constante
 Declarar objeto "entrada" do tipo Scanner estático e constante
 Declarar "teste" estático do tipo resultado com valor inicial nulo
-Declarar campo "contaAcertos" do tipo double
+Declarar campo "contaAcertos" do tipo int
+Declarar campo "contador" do tipo int
 Declarar main
-Declarar variável "contador" do tipo inteiro e iguala a 1
+Declarar variável "contador" do tipo inteiro e iguala a 0
 Imprime mensagem "Responda a pergunta abaixo. Caso queira encerrar o programa, digite -1"
 Chama método testaProduto enquanto teste for diferente de resultado encerra
-	Incrementa "contador" em 1 a cada iteração.
-Se "contador" for igual 10
-	Se "contaAcertos" dividido por 10 for menor que 0,75
-		Imprime a mensagem "Peça ajuda extra ao seu professor."
-		iguala "contador" a 1
-		iguala "contaAcertos" a 0 
-	Senão
-		Imprime a mensagem "Parabéns, você está pronto para ir para o próximo nível!"
-		iguala "contador" a 1
-		iguala "contaAcertos" a 0
+	Se "contador" for igual 10
+		Se "contaAcertos" dividido por 10 for menor que 0,75
+			Imprime a mensagem "Peça ajuda extra ao seu professor."
+			iguala "contador" a 0
+			iguala "contaAcertos" a 0 
+		Senão
+			Imprime a mensagem "Parabéns, você está pronto para ir para o próximo nível!"
+			iguala "contador" a 0
+			iguala "contaAcertos" a 0
 
 ----Método numeroAleatório
 retorna o próximo número inteiro aleatório com limite em 10
@@ -39,6 +39,7 @@ Declara variável "produtoReal" do tipo inteiro e atribui o produto entre "num1"
 Declara variável "produtoUsuario" tipo inteiro
 Mostra os números "num1" e "num2" para o usuário e pergunta qual o produto entre eles
 Armazena a entrada em "produtoUsuario"
+Incrementa contador em mais 1
 Cria um if - else if - else if
 	se "produtoUsuario" for igual a "produtoReal"
 		teste é igual ao resultado certo
@@ -50,16 +51,15 @@ Cria um if - else if - else if
 		chama método mensagemErro
 		Mostra os números "num1" e "num2" para o usuário e pergunta qual o produto entre eles
 		Armazena a entrada em "produtoUsuario"
+		Incrementa contador em mais 1
 		se "produtoUsuario" for igual a "produtoReal"
 			teste é igual ao resultado certo
 			chama método mensagemAcerto
 			incrementa "contaAcertos"
-			quebra o laço
 		ou se "produtoUsuario" for igual a -1
 			teste é igual a resultado encerra
 			imprime a mensagem "o programa será encerrado"
-			quebra o laço
-		enquanto "produtoUsuario" for diferente a "produtoReal" E "produtoUsuario" for diferente de -1
+		enquanto teste for igual a resultado errado E contador for menor 10
 	ou se "produtoUsuario" for igual a -1
 		teste é igual a resultado encerra
 		imprime a mensagem "o programa será encerrado"
