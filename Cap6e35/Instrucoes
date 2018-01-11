@@ -1,0 +1,43 @@
+Aplicativo de instrução assistida por computador (IAC)
+
+O aplicativo deve interagir com um usuário (criança)
+e deve pedir para que seja inserido dois números inteiros
+de um dígito. O programa deve então indagar o produto
+entre os dois números. Caso o usuário acerte,
+o programa deve pedir novamente por números inteiros de um dígito.
+Caso o usuário erre, então o programa deve repetir até que esteja certo.
+
+Criar classe IAC
+Criar enum resultado (certo, errado, encerra)
+Declara "teste" estático do tipo resultado com valor inicial nulo
+Declarar main
+Imprime mensagem "Responda a pergunta abaixo. Caso queira encerrar o programa, digite -1"
+Chama método gatilho
+
+----Método gatilho
+Chama método testaProduto
+Enquanto teste for diferente de resultado encerra
+	
+----Método numeroAleatório
+Declara objeto "aleatorio" do tipo Random
+retorna o próximo número inteiro aleatório com limite em 10
+
+----Método estático testaProduto
+Declara variável "num1" do tipo inteiro e atribui numeroAleatorio
+Declara variável "num2" do topo inteiro e atribui numeroAleatorio
+Declara variável "produtoReal" do tipo inteiro e atribui o produto entre "num1" e "num2"
+Declara variável "produtoUsuario" tipo inteiro
+Criar objeto "entrada" do tipo Scanner
+Mostra os números "num1" e "num2" para o usuário e pergunta qual o produto entre eles
+Armazena a entrada em "produtoUsuario"
+Encerra o objeto entrada
+Cria um if - else if - else if
+	se "produtoUsuario" seja igual a "produtoReal"
+		teste é igual ao resultado certo
+		imprime mensagem "Muito bom!"
+	ou se "produtoUsuario" seja diferente a "produtoReal"
+		teste é igual a resultado errado
+		imprime mensagem "Não, tente novamente"
+	ou se "produtoUsuario" seja igual a -1
+		teste é igual a resultado encerra
+		imprime a mensagem "o programa será encerrado"
