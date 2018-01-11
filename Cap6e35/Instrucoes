@@ -24,7 +24,6 @@ Declara variável "num1" do tipo inteiro e atribui numeroAleatorio
 Declara variável "num2" do topo inteiro e atribui numeroAleatorio
 Declara variável "produtoReal" do tipo inteiro e atribui o produto entre "num1" e "num2"
 Declara variável "produtoUsuario" tipo inteiro
-Criar objeto "entrada" do tipo Scanner
 Mostra os números "num1" e "num2" para o usuário e pergunta qual o produto entre eles
 Armazena a entrada em "produtoUsuario"
 Encerra o objeto entrada
