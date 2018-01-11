@@ -58,7 +58,7 @@ public class IACv2
 					teste = resultado.CERTO;
 					mensagemAcerto();
 				}
-			}	
+			}
 			while( produtoUsuario != produtoReal && produtoUsuario != -1 );
 		}
 		else if( produtoUsuario == -1 )
@@ -70,8 +70,8 @@ public class IACv2
 
 	private static void mensagemErro()
 	{
-int erro = 1 + aleatorio.nextInt(4);
-		
+		int erro = 1 + aleatorio.nextInt( 4 );
+
 		switch( erro )
 		{
 			case 1 :
@@ -85,14 +85,14 @@ int erro = 1 + aleatorio.nextInt(4);
 				break;
 			case 4 :
 				System.out.println( "Não. Continue tentando." );
-				break;	
+				break;
 		}
 	}
 
 	private static void mensagemAcerto()
 	{
-		int acerto = 1 + aleatorio.nextInt(4);
-		
+		int acerto = 1 + aleatorio.nextInt( 4 );
+
 		switch( acerto )
 		{
 			case 1 :
@@ -106,7 +106,7 @@ int erro = 1 + aleatorio.nextInt(4);
 				break;
 			case 4 :
 				System.out.println( "Continue com o ótimo trabalho!" );
-				break;	
+				break;
 		}
 	}
 

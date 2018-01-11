@@ -58,7 +58,7 @@ public class IAC
 					teste = resultado.CERTO;
 					System.out.println( "Muito bom!" );
 				}
-			}	
+			}
 			while( produtoUsuario != produtoReal && produtoUsuario != -1 );
 		}
 		else if( produtoUsuario == -1 )
