@@ -28,12 +28,24 @@ Mostra os números "num1" e "num2" para o usuário e pergunta qual o produto ent
 Armazena a entrada em "produtoUsuario"
 Encerra o objeto entrada
 Cria um if - else if - else if
-	se "produtoUsuario" seja igual a "produtoReal"
+	se "produtoUsuario" for igual a "produtoReal"
 		teste é igual ao resultado certo
 		imprime mensagem "Muito bom!"
-	ou se "produtoUsuario" seja diferente a "produtoReal"
+	ou se "produtoUsuario" for diferente a "produtoReal" E "produtoUsuario" for diferente de -1
+		faça
 		teste é igual a resultado errado
 		imprime mensagem "Não, tente novamente"
-	ou se "produtoUsuario" seja igual a -1
+		Mostra os números "num1" e "num2" para o usuário e pergunta qual o produto entre eles
+		Armazena a entrada em "produtoUsuario"
+		se "produtoUsuario" for igual a "produtoReal"
+			teste é igual ao resultado certo
+			imprime mensagem "Muito bom!"
+			quebra o laço
+		ou se "produtoUsuario" for igual a -1
+			teste é igual a resultado encerra
+			imprime a mensagem "o programa será encerrado"
+			quebra o laço
+		enquanto "produtoUsuario" for diferente a "produtoReal" E "produtoUsuario" for diferente de -1
+	ou se "produtoUsuario" for igual a -1
 		teste é igual a resultado encerra
 		imprime a mensagem "o programa será encerrado"
