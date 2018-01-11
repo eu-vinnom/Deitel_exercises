@@ -26,7 +26,6 @@ Declara variável "produtoReal" do tipo inteiro e atribui o produto entre "num1"
 Declara variável "produtoUsuario" tipo inteiro
 Mostra os números "num1" e "num2" para o usuário e pergunta qual o produto entre eles
 Armazena a entrada em "produtoUsuario"
-Encerra o objeto entrada
 Cria um if - else if - else if
 	se "produtoUsuario" for igual a "produtoReal"
 		teste é igual ao resultado certo
