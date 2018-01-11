@@ -9,17 +9,14 @@ Caso o usuário erre, então o programa deve repetir até que esteja certo.
 
 Criar classe IAC
 Criar enum resultado (certo, errado, encerra)
+Declara objeto "aleatorio" do tipo Random estático e constante
+Declara objeto "entrada" do tipo Scanner estático e constante
 Declara "teste" estático do tipo resultado com valor inicial nulo
 Declarar main
 Imprime mensagem "Responda a pergunta abaixo. Caso queira encerrar o programa, digite -1"
-Chama método gatilho
+Chama método testaProduto enquanto teste for diferente de resultado encerra
 
-----Método gatilho
-Chama método testaProduto
-Enquanto teste for diferente de resultado encerra
-	
 ----Método numeroAleatório
-Declara objeto "aleatorio" do tipo Random
 retorna o próximo número inteiro aleatório com limite em 10
 
 ----Método estático testaProduto
