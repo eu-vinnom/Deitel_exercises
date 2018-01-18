@@ -1,0 +1,17 @@
+Aplicativo que exibe em forma tabelada o salário de funcionários
+
+O funcionários do setor de vendas recebe $200 por semana mais 
+um adicional de 9% de comissão pelo valor das vendas realizadas
+na semana. O aplicativo deve utilizar de array unidimensional
+para receber as vendas, calcular o salario e exibir em forma
+tabelada a distribuição dos salários de acordo com a seguinte
+lista:
+	200-299
+	300-399
+	400-499
+	500-599
+	600-699
+	700-799
+	800-899
+	900-999
+	1000 ou mais
