@@ -15,3 +15,43 @@ lista:
 	800-899
 	900-999
 	1000 ou mais
+	
+Criar a classe ComissaoVendas
+	declarar campo private static final "aleatorio" do tipo Random
+	declarar campo private static final "ESCOPO" do tipo int e igualar a 10
+	declarar campo private static final "MAX_CONTADOR" do tipo int e igualar a 12
+	declarar campo private static "quantidadeVendas" do tipo int
+	declarar campo private static array "salarios" do tipo int
+	declarar main
+		declarar variável "entrada" do tipo Scanner
+		declarar variável array "valorVendas" do tipo int
+		imprimir mensagem na tela "Quantos salários a serem pagos?"
+		salvar a entrada do usuário em "quantidadeVendas"
+		instanciar tamanho de "valorVendas" com "quantidadeVendas"
+		chamar método geraVendas e atribuir a "valorVendas"
+		chamar método calculaSalarios com argumento "valorVendas"
+		chamar método mostraTabela
+		fechar variável "entrada"
+
+----Método geraVendas - private static - int
+	declarar variável "valor" do tipo int
+	atribuir aleatoriamente um numero inteiro aleatório com limite em 10000 à variável "valor"
+	retornar "valor"
+	
+----Método calculaSalarios - private static - void - parametro array de inteiros
+	declarar constante "SEMANAL" do tipo inteiro e atribuir 200
+	declarar constante "COMISSAO" do tipo double e atribuir 0,09
+	para todo elemento de salarios
+		multiplicar por "COMISSAO", somar "SEMANAL" e salvar dentro de elemento de "salarios" 
+	
+----Método mostraTabela - private static - void
+	imprimir mensagem na tela "Distribuição dos salários"
+	declarar array "contador" do tipo int com o tamanho de MAX_CONTADOR
+	para todo elemento de "salarios"
+		dividir o elemento por 100 e salvar no respectivo elemento em "contador"
+	para todo elemento de "contador" a partir do valor 2
+		se o elemento de "contador" for maior ou igual a 10 
+			imprimir mensagem na tela "1000 ou mais" e a contagem de pessoas
+		senão
+			imprimir mensagem na tela mostrando a faixa de valor e a quantidade de pessoas		
+		
