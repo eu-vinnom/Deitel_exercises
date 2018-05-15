@@ -1,0 +1,7 @@
+Aplicacao que mostra o horário
+
+A aplicação deverá substituir o comportamento da classe Time2Default,
+na qual a classe armazena valores para hora, minuto e segundo. A nova
+aplicação deverá contar os segundos a partir da meia-noite, porém o
+funcionamento da classe deverá continuar o mesmo. Dessa forma, as classes
+clientes não devem ser capaz de distinguir o funcionamento dos métodos.
