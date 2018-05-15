@@ -1,0 +1,14 @@
+Aplicativo que calcula o perimetro e area de um retangulo
+
+Recebe valores de comprimento e largura. Esses valores devem ser inicializados como 1.
+A classe calculará a área e o perímetro de um retângulo, desde que os valores 
+fornecidos foram maior que 0 e menor que 20.
+
+Criar classe Retangulo
+  campos comprimento e largura
+  criar metodos get e set para os campos
+  
+  
+metodos set
+  devem verificar se o valor inserido está no intervalor entre 0 e 20
+  se não estiver, resetar para o valor padrão.
